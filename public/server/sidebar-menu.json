@@ -1,0 +1,39 @@
+[
+  {
+    "text": "Menu Heading",
+    "heading": "true",
+    "translate": "sidebar.heading.HEADER"
+  },
+  {
+    "text": "Single View",
+    "sref": "app.singleview",
+    "icon": "fa fa-file-o",
+    "translate": "sidebar.nav.SINGLEVIEW"
+  },
+  {
+    "text": "Login",
+    "sref": "login",
+    "icon": "fa fa-lock",
+    "translate": "sidebar.nav.LOGIN"
+  },
+  {
+    "text": "Cadastro",
+    "sref": "#",
+    "icon": "icon-folder",
+    "submenu": [
+      { "text": "Usuário", 
+        "icon": "icon-folder",
+        "sref": "app.cadastro-usuario", 
+        "icon": "icon-folder",
+        "translate": "sidebar.nav.menu.submenu.USUARIO" 
+      }    
+    ],
+    "translate": "sidebar.nav.menu.MENU"
+  },
+  {
+    "text": "Sair",
+    "sref": "logout",
+    "icon": "fa fa-sign-out ",
+    "translate": "sidebar.nav.menu.LOGOUT"
+  }
+]

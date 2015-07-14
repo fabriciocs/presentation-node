@@ -1,0 +1,35 @@
+{
+  "dashboard": {
+    "WELCOME": "Welcome to {{appName}}"
+  },
+  "topbar": {
+    "search": {
+      "PLACEHOLDER": "Type and hit ENTER..."
+    }
+  },
+  "login":{
+  	"SIGIN_TO_CONTINUE":"LOGIN" ,
+  	"thankyou":{
+  	"TITLE": "Thank You! See You Later" ,
+  	"MSG":"Until the Next"
+  	}
+  },
+  "sidebar": {
+    "WELCOME": "Welcome",
+    "heading": {
+      "HEADER": "Main Navigation"
+    },
+    "nav": {
+      "SINGLEVIEW": "Single View",
+      "LOGIN": "Login",
+      "menu": {
+        "MENU": "Menu",
+        "SUBMENU": "Sub Menu",
+        "LOGOUT":"Logout",
+        "submenu":{
+          "USUARIO":"User"
+        }
+      }
+    }
+  }
+}

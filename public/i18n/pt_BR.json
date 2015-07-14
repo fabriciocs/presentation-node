@@ -1,0 +1,35 @@
+{
+  "dashboard": {
+    "WELCOME": "Bem-vindo à {{appName}}"
+  },
+  "topbar": {
+    "search": {
+      "PLACEHOLDER": "Digite e aperte enter.."
+    }
+  },
+  "login":{
+  	"SIGIN_TO_CONTINUE":"FAÇA LOGIN" ,
+  	"thankyou":{
+  	"TITLE": "Obrigado e até a próxima" ,
+  	"MSG":"Estaremos aqui sempre que você precisar"
+  	}
+  },
+  "sidebar": {
+    "WELCOME": "Bem Vindo",
+    "heading": {
+      "HEADER": "Navegação Principal"
+    },
+   "nav": {
+      "SINGLEVIEW": "Single View",
+      "LOGIN": "Login",
+      "menu": {
+        "MENU": "Menu",
+        "SUBMENU": "Sub Menu",
+        "LOGOUT":"Logout",
+        "submenu":{
+          "USUARIO":"Usuário"
+        }
+      }
+    }
+  }
+}
