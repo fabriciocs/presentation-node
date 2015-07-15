@@ -9,6 +9,7 @@ if(process.env.OPENSHIFT_MONGODB_DB_URL){
   dbURI = process.env.OPENSHIFT_MONGODB_DB_URL + db_name;
  
 // Create the database connection
+console.log(dbURI);
 mongoose.connect(dbURI);
  
 // CONNECTION EVENTS
