@@ -17,7 +17,7 @@ if(process.env.OPENSHIFT_MONGODB_DB_URL){
 }
  
 // Create the database connection
-mongoose.connect(dbURI, options);
+mongoose.connect(dbURI);
  
 // CONNECTION EVENTS
 // When successfully connected
