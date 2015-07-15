@@ -1,8 +1,12 @@
+var db_name = 'usuario_db';
 // Bring Mongoose into the app
-var mongoose = require( 'mongoose' );
- 
-// Build the connection string
-var dbURI = 'mongodb://localhost/test';
+var mongoose = require( 'mongoose' ),
+//provide a sensible default for local development
+dbURI = 'mongodb://127.0.0.1:27017/' + db_name;
+//take advantage of openshift env vars when available:
+if(process.env.OPENSHIFT_MONGODB_DB_URL){
+  dbURI = process.env.OPENSHIFT_MONGODB_DB_URL + db_name;
+}
  
 // Create the database connection
 mongoose.connect(dbURI);
