@@ -7,7 +7,7 @@ dbURI = 'mongodb://127.0.0.1:27017/' + db_name;
 //take advantage of openshift env vars when available:
 if(process.env.OPENSHIFT_MONGODB_DB_URL){
   dbURI = process.env.OPENSHIFT_MONGODB_DB_URL + db_name;
- 
+}
 // Create the database connection
 console.log(dbURI);
 mongoose.connect(dbURI);
