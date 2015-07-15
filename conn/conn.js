@@ -2,19 +2,11 @@ var db_name = 'presentationnode';
 // Bring Mongoose into the app
 var mongoose = require( 'mongoose' ),
 credentials = "admin:eYT1V7LArmf8",
-options = {},
 //provide a sensible default for local development
 dbURI = 'mongodb://127.0.0.1:27017/' + db_name;
 //take advantage of openshift env vars when available:
 if(process.env.OPENSHIFT_MONGODB_DB_URL){
   dbURI = process.env.OPENSHIFT_MONGODB_DB_URL + db_name;
-  options = {
-	  db: { native_parser: true },
-	  server: { poolSize: 5 },
-	  user: 'admin',
-	  pass: 'eYT1V7LArmf8'
-	}
-}
  
 // Create the database connection
 mongoose.connect(dbURI);
